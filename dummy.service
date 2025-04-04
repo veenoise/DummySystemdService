@@ -1,0 +1,9 @@
+[Unit]
+Description=Dummy systemd that echoes to /var/log/dummy-service.log
+
+[Service]
+ExecStart=
+ExecStart=sh /opt/dummy.sh
+
+[Install]
+WantedBy=multi-user.target
